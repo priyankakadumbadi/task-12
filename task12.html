@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events Demo</title>
+</head>
+<body>
+
+    <h1>JavaScript Events Example</h1>
+
+    <button id="btn">Click Me</button>
+    <p id="output"></p>
+
+    <script>
+        // Click event
+        document.getElementById("btn").addEventListener("click", function() {
+            document.getElementById("output").innerHTML = "Button Clicked!";
+        });
+
+        // Mouse over event
+        document.getElementById("btn").addEventListener("mouseover", function() {
+            document.getElementById("output").innerHTML = "Mouse is over the button!";
+        });
+
+        // Mouse out event
+        document.getElementById("btn").addEventListener("mouseout", function() {
+            document.getElementById("output").innerHTML = "Mouse left the button!";
+        });
+    </script>
+
+</body>
+</html>
